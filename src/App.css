@@ -8,11 +8,9 @@
   flex-flow: row wrap;
 } 
  
-/* .kingkong{
-  
-
-
-} */
+p{
+  text-align: justify;
+}
 
   body {
 background-color: rgba(165, 138, 16, 0.753);
@@ -22,5 +20,11 @@ min-width: 100%;
   width: 100%; 
   box-sizing: border-box;
   padding-top: 30px;
-  text-align: center;
+  
   }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

@@ -58,15 +58,18 @@ class App extends Component {
                   Just adding ONE stop at Arlington and E Warrington would provide easy public transit to such exciting businesses as:
            </p>
               </div>
-<div className="Links">
-Black Forge Coffee  - <a href=" http://www.blackforgecoffee.com/">Black Forge Coffee </a> 
-Alla Famiglia  -  http://allafamiglia.com/
-Work Hard Pittsburgh  -  https://workhardpgh.com/
-Leon's Caribbean   -   http://www.leonscaribbean.com/
-Onion Maiden   -    http://www.onionmaiden.com/ 
-Weeping Glass    -    http://www.moroseandmacabre.com/  
-Super Monkey Recording Studio    -    http://www.ilovesupermonkey.com/ 
-</div>  </div>
+<div className="Links"> 
+<ul>
+<li><a href=" http://www.blackforgecoffee.com/">Black Forge Coffee </a></li>
+<li><a href="http://allafamiglia.com/"> Alla Famiglia </a></li>
+<li><a href=" https://workhardpgh.com/"> Work Hard Pittsburgh </a></li>
+<li><a href=" http://www.leonscaribbean.com/"> Leon's Caribbean </a></li>
+<li><a href= "http://www.onionmaiden.com/"> Onion Maiden </a> </li>
+<li><a href= "http://www.moroseandmacabre.com/"> Weeping Glass </a> </li> 
+<li><a href= "http://www.ilovesupermonkey.com/"> Super Monkey Recording Studio </a> </li>
+</ul>
+</div>  
+  </div>
 );  
           }
 }
