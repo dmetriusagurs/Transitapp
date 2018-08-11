@@ -21,7 +21,6 @@ class App extends Component {
   const apiKey = "MYzLtMtGXiFNBstCkkDtGN7xB";
   Axios.get(`${baseUrl}bustime/api/v3/getroutes?key=${apiKey}`)
   .then(res =>
-<<<<<<< HEAD
     {
   
       let xml = res.data.body.split('-').join('');
@@ -38,20 +37,6 @@ class App extends Component {
             }
         } 
       });
-=======
-  {
-//this was made to remove the dash in bustime-response
-    let xml = res.data.body.split('-').join('');
-    console.log(xml);
-//parsestring for the XML syntax.
-    xml2js.parseString(xml, {trim: true}, function (err, result) {
-    console.log(result.bustimeresponse.tm);
-    
-    
-    });
-    this.setState({
-      transitAPI: res.data.results
->>>>>>> 6cc4b75d1d0908646b6918f6215229e008d57962
     });
 
 
@@ -59,10 +44,6 @@ class App extends Component {
 
  render() {
     return (
-<<<<<<< HEAD
-      <div className="App">
-        Some other word
-=======
   <div className="title"> <h1>Pittsburgh Transit Ep: 6 - The Return of The Brown Line</h1>   
   
     <div className="text">
@@ -73,7 +54,6 @@ class App extends Component {
                 Now, as people go about their day, in a largely transit-ignored part of the city, T's full of people have been zooming through the neighborhood, without stopping... and that led us to wonder why?
 
                   With the North Side extension to the T, and the many entrepreneurial efforts that have sprouted up in Allentown, does it make sense to still not provide service to this neighborhood? Maybe, while the transit is re-routed, this can be the perfect opportunity to renew some service to this latent jewel in the crown of Pittsburgh!  
->>>>>>> 6cc4b75d1d0908646b6918f6215229e008d57962
 
                   Just adding ONE stop at Arlington and E Warrington would provide easy public transit to such exciting businesses as:
            </p>
