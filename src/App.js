@@ -12,7 +12,8 @@ class App extends Component {
    super(props);
    this.state = 
    {  
-      routes: []
+    NumTs: 0,
+    routes: []
    };
    
   }  
@@ -43,35 +44,50 @@ class App extends Component {
  } 
 
  render() {
-    return (
-  <div className="title"> <h1>Pittsburgh Transit Ep: 6 - The Return of The Brown Line</h1>   
-  
-    <div className="text">
-      <p> The "Brown Line" (we didn't name it) was discontinued from service in 2010. It provided speedy light-rail access to Downtown from Allentown, a part of the city that is currently in the midst of a renovation.
+   return (
+   <div>
+      <h1 className="title">Pittsburgh Transit Ep VI:<br />
+      The Return of The Brown Line</h1>   
+      <div className="text">
+        <p>The "<a href="https://en.wikipedia.org/wiki/Brown_Line_(Pittsburgh)">
+        Brown Line</a>" (we didn't name it) was discontinued from service in 2010.</p>
+        <p> It provided speedy light-rail access to Downtown from Allentown, a part of 
+          the city that is currently in the midst of a renovation.</p>
 
-                Earlier this month, a train derailed, spilling Listerine (among other things) on the South Side Junction stop of the T, which required a work-around to carry public transit riders between Downtown and the South Hills.
+        <p>Earlier this month, a train derailed, spilling Listerine (among other things) 
+          on the South Side Junction stop of the T, which required a work-around to carry 
+          public transit riders between Downtown and the South Hills.</p>
 
-                Now, as people go about their day, in a largely transit-ignored part of the city, T's full of people have been zooming through the neighborhood, without stopping... and that led us to wonder why?
+        <p>Now, as people go about their day, in a largely transit-ignored part of the 
+          city, T's full of people have been zooming through the neighborhood, without 
+          stopping... and that led us to wonder why?</p>
 
-                  With the North Side extension to the T, and the many entrepreneurial efforts that have sprouted up in Allentown, does it make sense to still not provide service to this neighborhood? Maybe, while the transit is re-routed, this can be the perfect opportunity to renew some service to this latent jewel in the crown of Pittsburgh!  
+        <p>With the North Side extension to the T, and the many entrepreneurial efforts 
+          that have sprouted up in Allentown, does it make sense to still not provide 
+          service to this neighborhood? Maybe, while the transit is re-routed, this can 
+          be the perfect opportunity to renew some service to this latent jewel in the 
+          crown of Pittsburgh!</p>
 
-                  Just adding ONE stop at Arlington and E Warrington would provide easy public transit to such exciting businesses as:
-           </p>
-              </div>
-<div className="Links"> 
-<ul>
-<li><a href=" http://www.blackforgecoffee.com/">Black Forge Coffee </a></li>
-<li><a href="http://allafamiglia.com/"> Alla Famiglia </a></li>
-<li><a href=" https://workhardpgh.com/"> Work Hard Pittsburgh </a></li>
-<li><a href=" http://www.leonscaribbean.com/"> Leon's Caribbean </a></li>
-<li><a href= "http://www.onionmaiden.com/"> Onion Maiden </a> </li>
-<li><a href= "http://www.moroseandmacabre.com/"> Weeping Glass </a> </li> 
-<li><a href= "http://www.ilovesupermonkey.com/"> Super Monkey Recording Studio </a> </li>
-</ul>
-</div>  
-  </div>
-);  
-          }
-}
+        <p>Just adding ONE stop at Arlington and E Warrington would provide easy public 
+          transit to such exciting businesses as:</p>
+
+        <div className="Links"> 
+          <ul>
+            <li><a href=" http://www.blackforgecoffee.com/">Black Forge Coffee </a></li>
+            <li><a href="http://allafamiglia.com/"> Alla Famiglia </a></li>
+            <li><a href=" https://workhardpgh.com/"> Work Hard Pittsburgh </a></li>
+            <li><a href=" http://www.leonscaribbean.com/"> Leon's Caribbean </a></li>
+            <li><a href= "http://www.onionmaiden.com/"> Onion Maiden </a> </li>
+            <li><a href= "http://www.moroseandmacabre.com/"> Weeping Glass </a> </li> 
+            <li><a href= "http://www.ilovesupermonkey.com/"> Super Monkey Recording Studio </a> </li>
+            <li>... AND MORE!</li>
+          </ul>
+        </div> 
+      </div>
+      <h2 className="footer">While you were reading this, <h1>{this.state.NumTs} trolleys</h1> have driven through Allentown without stopping...</h2> 
+    </div>
+    );
+    }
+  }
 
 export default App;
