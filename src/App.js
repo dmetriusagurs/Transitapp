@@ -11,7 +11,8 @@ class App extends Component {
    console.log("Test");
    super(props);
    this.state = 
-   {  
+   {
+      count: 0,
       routes: []
    };
    
@@ -69,7 +70,18 @@ class App extends Component {
 <li><a href= "http://www.ilovesupermonkey.com/"> Super Monkey Recording Studio </a> </li>
 </ul>
 </div>  
+  <h1 className="Counter">
+  # of trains rollin' through without stopping.<br/>
+  
+  {this.state.count}
+ </h1>
+  
+  
+  
   </div>
+
+
+
 );  
           }
 }
