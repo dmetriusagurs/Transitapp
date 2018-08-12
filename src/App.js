@@ -12,8 +12,10 @@ class App extends Component {
    super(props);
    this.state = 
    {  
-    NumTs: 0,
-    routes: []
+    numTs: 0,
+    routes: [],
+    rt: ["BLLB", "BLSV", "RED"],
+    rtdd: rt
    };
    
   }  
@@ -84,7 +86,11 @@ class App extends Component {
           </ul>
         </div> 
       </div>
-      <h2 className="footer">While you were reading this, <h1>{this.state.NumTs} trolleys</h1> have driven through Allentown without stopping...</h2> 
+      <h2 className="footer">While you were reading this, </h2>
+      <h1 className="footer">{this.state.NumTs} trolleys</h1> 
+      <h2 className="footer">have driven through Allentown without stopping...</h2> 
+      <br />
+      <br />
     </div>
     );
     }
